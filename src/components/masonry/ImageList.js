@@ -13,7 +13,7 @@ export default class ImageList extends React.Component {
 	}
 	
 	render(){
-
+		//console.log(teest)
 		const images = this.props.images.map(image => {
 			return(
 				
