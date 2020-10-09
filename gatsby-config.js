@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Flexible Gatsby`,
-    description: `I am a web developer focusing on front-end development. Always hungry to keep learning.`,
-    author: `David Freeman`,
-    siteUrl: `https://github.com/wangonya/flexible-gatsby`,
+    title: `Derek Everhart: Professional Photographer - Portfolio`,
+    description: `I am a professional photographer casting my internet presence through this portfolio.`,
+    author: `Derek Everhart`,
+    siteUrl: `http://derekeverhart.com`,
     social: {
-      twitter: `wang0nya`,
-      facebook: ``,
+      twitter: `blank`,
+      facebook: `derekeverhartphotography`,
       github: `wangonya`,
       linkedin: `wangonya`,
-      email: `kwangonya@gmail.com`,
+      email: `derekeverhart@gmail.com`,
     },
   },
   plugins: [
@@ -25,6 +25,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/content/images`,
       },
     },
     {
@@ -79,4 +86,5 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
   ],
+
 }

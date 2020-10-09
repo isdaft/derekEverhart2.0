@@ -4,6 +4,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
 import Sidebar from '.././components/sidebar'
+import Gallery from '../components/Gallery'
+
 import '../styles/main.scss'
 import '../styles/fonts/font-awesome/css/font-awesome.min.css'
 
@@ -35,14 +37,16 @@ const DefaultLayout = ({ children }) => (
           />
         </Helmet>
         <Sidebar siteMetadata={data.site.siteMetadata} />
-        {children}
+       <Gallery/>
+        {/*children*/}
+
       </div>
     )}
   />
 )
 
 DefaultLayout.propTypes = {
-  children: PropTypes.node.isRequired,
+  /*children: PropTypes.node.isRequired,*/
 }
 
 export default DefaultLayout
