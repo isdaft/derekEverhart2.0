@@ -14,7 +14,7 @@ class ContactForm extends React.Component {
     return (
     	<div className="contact-page">
     	<h1>Contact Me</h1>
-      <form style={formStyle} className="ui form" action={this.props.action} method="post">
+      <form style={formStyle} className="ui form" method="POST" data-netlify="true">
         <div className="field">
           <label>Full name</label>
           <input type="text" name="fullname"/>
