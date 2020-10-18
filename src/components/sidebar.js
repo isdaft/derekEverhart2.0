@@ -2,6 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 
 import Logo from './pic.jpg'
+import Header from '../components/Header'
 
 const Sidebar = ({ siteMetadata }) => (
   <>
@@ -16,6 +17,7 @@ const Sidebar = ({ siteMetadata }) => (
           <div className="author-name">{siteMetadata.author}</div>
           <p>{siteMetadata.description}</p>
         </div>
+        <Header/>
       </header>
       <footer>
         <section className="contact">

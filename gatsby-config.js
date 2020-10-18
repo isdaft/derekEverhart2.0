@@ -13,6 +13,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-less`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -70,6 +71,19 @@ module.exports = {
       },
     },
     `gatsby-plugin-feed`,
+    `gatsby-plugin-page-transitions`,
+    {
+      resolve: 'gatsby-plugin-page-transitions',
+      options: {
+        transitionTime: 500
+      }
+    },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/layouts/index.js`),
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

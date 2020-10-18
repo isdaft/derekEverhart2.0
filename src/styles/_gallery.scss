@@ -1,0 +1,23 @@
+.gallery-page h1 {
+	font-size:$heading-1;
+}
+.gallery-page button {
+	font-family:$font-family;
+	cursor:pointer;
+	pointer:cursor;
+}
+.gallery-page button:hover{
+	background: rgba(0, 0, 0, 0.03)!important;
+	color:$dark!important;
+}
+.gallery-page button:active{
+	font-weight:600!important;
+	background: rgba(0, 0, 0, 0.03)!important;
+	color:$dark;
+}
+.gallery-page .item.active-true{
+	font-weight:600!important;
+}
+.gallery-page .item.active-false{
+	font-weight:400!important;
+}

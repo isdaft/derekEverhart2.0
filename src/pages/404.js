@@ -1,6 +1,6 @@
 import React from 'react'
 
-import DefaultLayout from '../components/layout'
+import DefaultLayout from '../layouts/index.js'
 import SEO from '../components/seo'
 
 class NotFoundPage extends React.Component {

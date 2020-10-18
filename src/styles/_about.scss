@@ -1,0 +1,37 @@
+.about-page {
+	width:80vw;
+}
+.about-page h1 {
+	font-size:$heading-1;
+	color: $dark;
+	line-height: calc(28px + 8 * ((100vw - 320px) / 680));
+	margin: 0px;
+}
+.about-page p {
+	font-size:$font-size-p;
+}
+.about-page .profileTitle span {
+	color: $dark;
+	font-size: calc(12px + 2 * ((100vw - 320px) / 680));
+	line-height: calc(16px + 4 * ((100vw - 320px) / 680));
+	display: block;
+	text-transform: none;
+	padding-top: 2px;
+}
+.grid-article {
+	display: grid;
+width: 100%;
+grid-template-areas: 'profile-titleArea profile-titleArea' 'profile-photoArea profile-textArea';
+grid-gap: 30px;
+background-color: var(--color-trans);
+padding: 0px 0px 100px 0px;
+}
+.profileTitle {
+    grid-area: profile-titleArea;
+}
+.profilePhoto {
+    grid-area: profile-photoArea;
+}
+.profileText {
+    grid-area: profile-textArea;
+}

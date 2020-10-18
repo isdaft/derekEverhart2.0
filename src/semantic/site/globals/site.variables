@@ -1,0 +1,7 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+.ui.menu {
+	font-family: 'PT Serif', serif;
+}

@@ -29,11 +29,11 @@ class ImageCard extends React.Component {
 				<div className="imageInfo">
 					<div className="aligner-top">
 							<a href="#">
-								oijdeiwnfd
+								
 							</a>
 					</div>
 					<div className={`aligner-bottom`}>
-							dopwmpoidjw
+							
 					</div>
 				</div>
 

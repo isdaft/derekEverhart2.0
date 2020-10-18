@@ -11,8 +11,8 @@ function GalleryRender(props) {
   const portfolioCategoriesAll = [];
   props.data.map(function(item){
     
-    if(!portfolioCategoriesAll.includes('all')){
-      portfolioCategoriesAll.push('all');
+    if(!portfolioCategoriesAll.includes('All')){
+      portfolioCategoriesAll.push('All');
     } 
     if(!portfolioCategoriesAll.includes(item.node.relativePath.split('/')[0])){
       portfolioCategoriesAll.push(item.node.relativePath.split('/')[0])
@@ -30,14 +30,14 @@ function GalleryRender(props) {
       sizes: item.node.childImageSharp.fluid.sizes, 
       srcSet: item.node.childImageSharp.fluid.srcSet,
       src: item.node.childImageSharp.fluid.src};
-    container["category"] = [item.node.relativePath.split('/')[0], 'all'];
+    container["category"] = [item.node.relativePath.split('/')[0], 'All'];
     container["alt"] = item.node.name;
 
     return container; //returns resulting modified array of objects back into portfolioItems
 
   })
 
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState("All");
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -62,19 +62,23 @@ function GalleryRender(props) {
 
   return (
     <div>
-      <div className="portfolio__labels">
+      
         {/* print out all categories based on the folders found in images parent*/}
-        
+        <div className="gallery-page">
+        <h1>Gallery</h1>
+        <div className="ui menu">
         { portfolioCategoriesAll.map((category, i) => (
-
-          <a key={i} href="/#" active={`${filter === category}`} onClick={() => {setFilter(category)} }>
-          <span>{category}</span>
-          </a>
+          
+          <button key={i} className={`item active-${filter === category}`} active={`${filter === category}`} onClick={() => {setFilter(category)} } style={{border: 'none'}}>
+          {category}
+          </button>
+          
         ))}
-        
-      </div>
+        </div>
+        </div>        
+      
         <div className="portfolio__container">      
-              {console.log(projects)}
+              
             <ImageList images={projects}/> 
                  
       </div>

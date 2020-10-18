@@ -5,3 +5,7 @@ $gray: #ecf0f1;
 $dark-gray: #a0a0a0;
 $dark-blue: #263959;
 $dark: #333030;
+
+$heading-1: calc(24px + 8 * ((100vw - 320px) / 680));
+$font-size-p: calc(16px + .5 * ((100vw - 320px) / 680));
+$font-family: 'PT Serif', serif;

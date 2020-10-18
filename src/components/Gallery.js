@@ -35,8 +35,8 @@ export default class Gallery extends React.Component {
 
         render={(data) => (
 
-          <div className="content-box clearfix">
-            {console.log(data.allPhotos)}
+          <div>
+            
             {<GalleryRender data={data.allPhotos.edges}/>}
  
           </div> 

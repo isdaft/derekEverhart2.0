@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Layout from '../components/layout'
+import { Link } from 'gatsby';
 
 
 
@@ -8,16 +8,16 @@ class IndexPage extends React.Component {
 
 
   render() {
+
     return (
-      <div>
-      
-      <Layout>
-
-      </Layout>
-
+      <div className="index-page">
+      <h1>Hi! I'm Derek.</h1>
+      <p>Welcome to derekeverhart.com - We are currently under construction.</p>
       </div>
+
     )
   }
 }
 
-export default IndexPage
+export default IndexPage;
+
